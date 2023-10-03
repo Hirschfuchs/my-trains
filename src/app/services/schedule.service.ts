@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
+import { Schedule } from '../models/schedule';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScheduleService {
-
-  constructor() { }
+  constructor(private readonly schedule: Schedule) {}
 }
